@@ -6,56 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sakura/dist/sakura.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="loader">
-                <button id="play">Start</button>
-            </div>
-        </div>
+    <div class="loader">
+        <button id="play">Ấn tớ đi ^^</button>
     </div>
     <audio class="song" controls loop>
         <source src="music.mp3">
         </source>
         Your browser isn't invited for super fun audio time.
     </audio>
-    <canvas id="confetti"></canvas>
-    <div class="main">
-        <div class="container pt-5">
-            <div class="row">
+    <div id="main">
 
-                <div class="col-12 col-xl-6 mx-auto">
-                    <img src="img/banner.png" alt="">
-                </div>
-
-                <div class="col-12  text-center">
-                    <div id="name" class="area">Gaurav</div>
-                </div>
-
-                <div class="col-12 text-center">
-                    <div class="type-wrap">
-                        <div id="typed-strings" class="typing">
-                            <h2>Happy Birthday <i id="nae">Gaurav</i></h2>
-                            <h2>Have a wonderful day</h2>
-                            <h2>Filled with joy and happiness.</h2>
-                        </div>
-                        <span id="typed" style="white-space:pre;"></span>
+        <div class="page">
+            <img id="main_bg" src="img/main_bg.png">
+        </div>
+        <div class="page" style="flex-direction: column;">
+            <div class="text-center" style="margin-top:50px;">
+                <div class="type-wrap">
+                    <div id="typed-strings" class="typing">
+                            <h2>Tuổi mới xinh đẹp, vui vẻ, và thành công hưn nữa</h2>
+                            <h2>Mau chốt ý trung nhân lắm tiền 💸 giàu tình cảm 💖</h2>
+                            <h2>luôn luôn hướng về gia đình</h2>
+                            <h2>  (e hèm ^^)  </h2>
                     </div>
+                    <span id="typed" style="white-space:pre;"></span>
                 </div>
+            </div>
 
-                <div class="col-12 col-xl-3 cake">
-                    <img src="img/cake.gif" alt="">
-                </div>
+            <div class="cake">
+                <img src="img/cake.gif" alt="">
+            </div>
+
+            <div class="text-center" style="margin-bottom: auto;">
+                <h2 id="name">HPBD Minh Ngọc 🥳</h2>
+            </div>
+
+            <div style="visibility:hidden">
+                <h2>Intentional blank</h2>
+            </div>
+
+            <div style="visibility:hidden">
+                <h2>Intentional blank</h2>
             </div>
         </div>
         <img src="img/Balloon-Border.png" width="100%" class="balloon-border">
     </div>
 </body>
-<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<!-- <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script> -->
+<script src="sakura/dist/sakura.js"></script>
 <script src="js/jquery.js"></script>
-<script src="js/typed.min.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="js/script.js"></script>
 
 </html>
