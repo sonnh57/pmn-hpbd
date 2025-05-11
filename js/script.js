@@ -18,6 +18,7 @@ var effect = new Sakura('div', {
     ],
     maxSize: 20,
     minSize: 10,
+    delay: 100,
 });
 
 var url_string = window.location.href; //window.location.href
@@ -40,10 +41,12 @@ $('#play').click(function () {
         top: -1000
     }, 4000);
     var audio = $('.song')[0];
+    audio.volume = 0.8;
     audio.play();
 
     var typed = new Typed("#typed", {
     stringsElement: '#typed-strings',
+    startDelay: 500,
     typeSpeed: 30,
     backSpeed: 10,
     loop: true
